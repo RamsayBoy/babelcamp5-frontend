@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first form</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>About you</legend>
+            <p>
+                <label for="first_name">First Name: </label>
+                <input type="text" name="first_name" id="first_name">
+            </p>
+            <p>
+                <label for="last_name">Last Name: </label>
+                <input type="text" name="last_name" id="last_name">
+            </p>
+            <p>
+                <label for="birth_name">Birth Name: </label>
+                <input type="date" name="birth_name" id="birth_name">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Favorites codes</legend>
+            <p>
+                <label for="js_check">Javascript</label>
+                <input type="checkbox" name="js_check" id="js_check">
+            </p>
+            <p>
+                <label for="node_check">Node</label>
+                <input type="checkbox" name="node_check" id="node_check">
+            </p>
+            <p>
+                <label for="php_check">PHP</label>
+                <input type="checkbox" name="php_check" id="php_check">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Favorites IDE</legend>
+            <p>
+                <label for="intellij_radio">IntellJ</label>
+                <input type="radio" name="radio_ide" id="intellij_radio" checked>
+            </p>
+            <p>
+                <label for="vsc_radio">Visual Studio Code</label>
+                <input type="radio" name="radio_ide" id="vsc_radio">
+            </p>
+            <p>
+                <label for="atom_radio">Atom</label>
+                <input type="radio" name="radio_ide" id="atom_radio">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Favorite Mobile OS</legend>
+            <p>
+                <label for="android_radio">Javascript</label>
+                <input type="radio" name="radio_mobileos" id="android_radio" checked>
+            </p>
+            <p>
+                <label for="ios_radio">Node</label>
+                <input type="radio" name="radio_mobileos" id="ios_radio">
+            </p>
+        </fieldset>
+
+        <p>
+            <label for="textarea">Comments: </label>
+            <textarea name="comments" id="textarea" cols="30" rows="3"></textarea>
+        </p>
+        <p>
+            <label for="disabled">Disabled: </label>
+            <input type="text" value="disabled value" disabled>
+        </p>
+
+        <button type="reset">Reset</button>
+        <button type="submit">Send</button>
+    </form>
+</body>
+
+</html>
