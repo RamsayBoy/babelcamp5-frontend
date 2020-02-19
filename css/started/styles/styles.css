@@ -1,0 +1,50 @@
+h1 {
+    color: red;
+}
+
+p {
+    color: green;
+}
+
+p, li {
+    color: green;
+}
+
+li {
+    list-style-type: none;
+}
+
+.special {
+    font-weight: bold;
+}
+
+li.special,
+span.special {
+    color: orange;
+}
+
+li em {
+    color: rebeccapurple;
+}
+
+h1 + p {    /* If a <p> exists and it is the next element after a <h1>, then styles are applied */
+    font-size: 200%;
+}
+
+a:link {
+    color: pink;
+}
+  
+a:visited {
+    color: green;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+body h1 + p .special {
+    color: yellow;
+    background-color: black;
+    padding: 5px;
+}
