@@ -6,9 +6,41 @@
     font-family: 'Roboto', sans-serif;
 }*/
 
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body {
     margin: 0;
     background-color: #e7e7e7;
+}
+
+.container {
+    margin: 0 2em;
+}
+
+.button {
+    cursor: pointer;
+    border: solid 2px #1c6698;
+    padding: 1em 2em;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    width: 15em;    /* TODO Set <a> element size */
+}
+
+a.button {
+    text-decoration: none;
+    color: #1c6698;
+    text-transform: uppercase;
 }
 
 /******************************************************************************
@@ -21,16 +53,17 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
+    position: sticky;   /* TODO Make it sticky */
 }
 
 .juan-maravilloso {
     margin: 0;
     margin-left: 2em;
     color: #a2a2a2;
-    font-size: 1em;
+    font-size: 14px;
     font-family: 'Bebas Neue', cursive;
     letter-spacing: 1.5px;
+    text-transform: uppercase;
 }
 
 .nav-elements .material-icons {
@@ -40,4 +73,29 @@ body {
 
 .nav-elements ul {
     display: none;
+}
+
+/******************************************************************************
+ * Header
+ *****************************************************************************/
+header {
+    padding: 3em 0;
+}
+
+header .welcome-message {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+header .soy-juan-desarrolla {
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 3px;
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
+    margin-bottom: 1em;
 }
