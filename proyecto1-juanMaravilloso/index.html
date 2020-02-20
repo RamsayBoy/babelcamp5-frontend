@@ -9,88 +9,92 @@
     <link rel="stylesheet" href="styles/styles.css">
     <!-- Material icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Roboto:300,400,500&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
-        <nav class="rectangle">
-            <!-- TODO check tag -->
-            <p class="juan-maravilloso">Juan Maravilloso</p>
+    <!-- TODO Create container for lateral margins everywhere -->
+    <!--div class="container"-->
+    <nav class="rectangle">
+        <!-- TODO check tag -->
+        <p class="juan-maravilloso">Juan Maravilloso</p>
 
-            <div class="nav-elements">
-                <i class="material-icons">
-                    menu
-                </i>
+        <div class="nav-elements">
+            <i class="material-icons">
+                menu
+            </i>
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contactame">Contáctame</a></li>
+            </ul>
+        </div> <!-- .nav-elements -->
+    </nav> <!-- .rectangle -->
+
+    <header>
+        <p class="welcome-message">¡Hola!</p>
+        <h1 class="soy-juan-desarrolla">Soy Juan, desarrollador web</h1>
+        <!-- To contact page -->
+        <a class="button" href="#">¿Hablamos?</a>
+    </header> <!-- .mainpage -->
+
+    <main>
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <p class="top-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore
+                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat.</p>
+            <p class="bottom-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla
+                pariatur.</p>
+            <iframe src="https://www.youtube.com/embed/RzClCJFpSoM"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </section> <!-- .sobre-mi -->
+
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+
+            <div class="skill">
+                <h3>Front-end developer</h3>
+
+                <h4>Lenguajes</h4>
+                <p>HTML, CSS, JavaScript</p>
+
+                <h4>Dev tools</h4>
                 <ul>
-                    <li><a href="#sobre-mi">Sobre mí</a></li>
-                    <li><a href="#habilidades">Habilidades</a></li>
-                    <li><a href="#contactame">Contáctame</a></li>
+                    <li>Atom</li>
+                    <li>Bootstrap</li>
+                    <li>Github</li>
+                    <li>Gitlab</li>
+                    <li>Terminal</li>
                 </ul>
-            </div> <!-- .nav-elements -->
-        </nav> <!-- .rectangle -->
+            </div> <!-- .skill -->
 
-        <header>
-            <p class="welcome-message">¡Hola!</p>
-            <h1 class="soy-juan-desarrolla">Soy Juan, desarrollador web</h1>
-            <!-- To contact page -->
-            <a class="button" href="#">¿Hablamos?</a>
-        </header> <!-- .mainpage -->
+            <div class="skill">
+                <h3>Back-end developer</h3>
 
-        <main>
-            <section id="sobre-mi">
-                <h2>Sobre mí</h2>
-                <p class="top-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.</p>
-                <p class="bottom-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla
-                    pariatur.</p>
-                <iframe src="https://www.youtube.com/embed/RzClCJFpSoM"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </section> <!-- .sobre-mi -->
+                <h4>Lenguajes</h4>
+                <p>Java, Node.js, Python, PHP</p>
 
-            <section id="habilidades">
-                <h2>Habilidades</h2>
+                <h4>Dev tools</h4>
+                <ul>
+                    <li>Angular</li>
+                    <li>Github</li>
+                    <li>Docker</li>
+                    <li>XAMPP</li>
+                </ul>
+            </div> <!-- .skill -->
+        </section>
 
-                <div class="skill">
-                    <h3>Front-end developer</h3>
-
-                    <h4>Lenguajes</h4>
-                    <p>HTML, CSS, JavaScript</p>
-
-                    <h4>Dev tools</h4>
-                    <ul>
-                        <li>Atom</li>
-                        <li>Bootstrap</li>
-                        <li>Github</li>
-                        <li>Gitlab</li>
-                        <li>Terminal</li>
-                    </ul>
-                </div> <!-- .skill -->
-
-                <div class="skill">
-                    <h3>Back-end developer</h3>
-
-                    <h4>Lenguajes</h4>
-                    <p>Java, Node.js, Python, PHP</p>
-
-                    <h4>Dev tools</h4>
-                    <ul>
-                        <li>Angular</li>
-                        <li>Github</li>
-                        <li>Docker</li>
-                        <li>XAMPP</li>
-                    </ul>
-                </div> <!-- .skill -->
-            </section>
-
-            <footer>
-                &copy; 2019 Juan Maravilloso
-            </footer>
-        </main>
-    </div>
+        <footer>
+            &copy; 2019 Juan Maravilloso
+        </footer>
+    </main>
+    <!--/div-->
+    <!-- .container -->
 </body>
 
 </html>

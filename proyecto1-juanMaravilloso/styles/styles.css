@@ -1,6 +1,43 @@
 /******************************************************************************
+ * Global
+ *****************************************************************************/
+/*html {
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Roboto', sans-serif;
+}*/
+
+body {
+    margin: 0;
+    background-color: #e7e7e7;
+}
+
+/******************************************************************************
  * Nav
  *****************************************************************************/
+.rectangle {
+    background-color: #000000;
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+}
+
+.juan-maravilloso {
+    margin: 0;
+    margin-left: 2em;
+    color: #a2a2a2;
+    font-size: 1em;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1.5px;
+}
+
+.nav-elements .material-icons {
+    color: #a2a2a2;
+    margin-right: 1em;
+}
+
 .nav-elements ul {
     display: none;
 }
