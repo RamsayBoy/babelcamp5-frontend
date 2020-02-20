@@ -1,3 +1,5 @@
+/* TODO Create a container for global margins */
+
 /******************************************************************************
  * Global
  *****************************************************************************/
@@ -17,10 +19,6 @@ html {
 body {
     margin: 0;
     background-color: #e7e7e7;
-}
-
-.container {
-    margin: 0 2em;
 }
 
 .button {
@@ -79,7 +77,7 @@ a.button {
  * Header
  *****************************************************************************/
 header {
-    padding: 3em 0;
+    padding: 2em 2em;
 }
 
 header .welcome-message {
@@ -98,4 +96,137 @@ header .soy-juan-desarrolla {
     font-family: 'Bebas Neue', cursive;
     text-transform: uppercase;
     margin-bottom: 1em;
+    font-weight: normal;
+}
+
+header .button {
+    margin-bottom: 1em;
+}
+
+/******************************************************************************
+ * Sobre mi
+ *****************************************************************************/
+#sobre-mi {
+    padding: 2em 2em;
+    background-color: black;
+}
+
+#sobre-mi h2 {
+    color: #a2a2a2;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+    font-size: 20px;
+    letter-spacing: 1.67px;
+    text-align: center;
+}
+
+#sobre-mi .top-text,
+#sobre-mi .bottom-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 20px;
+    color: #a2a2a2;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+#sobre-mi .top-text {
+    font-weight: lighter;
+}
+
+#sobre-mi .bottom-text {
+    font-weight: normal;
+}
+
+#sobre-mi iframe {
+    margin-top: 2em;
+    display: block;
+    width: 90%;
+    height: 50vw;
+    margin: 0 auto;
+    border: none;
+    margin-bottom: 1em;
+}
+
+/******************************************************************************
+ * Habilidades
+ *****************************************************************************/
+#habilidades h2 {
+    margin: 0;
+    padding: 2em 2em;
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+    font-size: 20px;
+    letter-spacing: 1.67px;
+    text-align: center;
+}
+
+.scrollable {
+    padding: 0 2em 4em 2em;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.skill {
+    display: inline-grid;
+    background-color: black;
+    border-radius: 5px;
+    color: #a2a2a2;
+    padding: 1em 2em;
+    width: 15m;
+    height: 365px;
+    margin-right: 2em;
+}
+
+.skill:last-child {
+    margin-right: 0;
+}
+
+.skill h3,
+.skill h4 {
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    padding: 0.2em 0.2em;
+    margin-top: 1px;
+}
+
+.skill h3 {
+    border: solid 1.5px #a2a2a2;
+    margin-bottom: 3em;
+    height: fit-content;
+}
+
+.skill h4 {
+    border: none;
+    color: white;
+    margin-bottom: 0;
+}
+
+.skill ul {
+    margin: 0;
+}
+
+.skill p,
+.skill li {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.skill p {
+    margin-bottom: 2em;
+}
+
+.skill ul {
+    list-style: none;
+    padding-left: 0;
 }
