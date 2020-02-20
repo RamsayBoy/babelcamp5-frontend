@@ -32,7 +32,7 @@ body {
     letter-spacing: 1px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    width: 15em;    /* TODO Set <a> element size */
+    width: fit-content;
 }
 
 a.button {
@@ -178,6 +178,8 @@ header .button {
     width: 15m;
     height: 365px;
     margin-right: 2em;
+    width: 220px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .skill:last-child {
@@ -198,8 +200,10 @@ header .button {
 
 .skill h3 {
     border: solid 1.5px #a2a2a2;
-    margin-bottom: 3em;
+    width: fit-content;
+    margin: 0 auto;
     height: fit-content;
+    margin-bottom: 3em;
 }
 
 .skill h4 {
