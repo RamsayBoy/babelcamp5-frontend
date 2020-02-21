@@ -35,13 +35,13 @@ h4 {
     color: white;
 }
 
-/* TODO Fix button margin-top */
 .button {
     border-radius: 3px;
     border: solid 2px #1c6698;
     padding: 14px 36px;
     text-transform: uppercase;
     color: #1c6698;
+    display: inline-block;  /* Fix width bug */
 }
 
 .button:hover {
