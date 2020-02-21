@@ -10,7 +10,8 @@ body {
     background: #e7e7e7;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6,
+header.nav-open ul li { /* Para no poner font-family abajo */
     font-family: "Bebas Neue", "cursive";
     font-weight: normal;
     letter-spacing: 3px;
@@ -92,6 +93,47 @@ header #icon-close {
 
 header nav {
     display: none;
+}
+
+/* Menu */
+header.nav-open #icon-open {
+    display: none;
+}
+
+header.nav-open nav,
+header.nav-open #icon-close {
+    display: block;
+}
+
+header.nav-open nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #e7e7e7;
+    height: 448px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+
+header.nav-open #icon-close {
+    z-index: 10;
+}
+
+header.nav-open ul {
+    font-size: 18px;
+    letter-spacing: 2px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header.nav-open ul li {
+    color: #1c6698;
+    margin: 40px;
+    text-transform: uppercase;ç
 }
 
 /* Summary */
