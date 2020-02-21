@@ -14,11 +14,12 @@ h1, h2, h3, h4, h5, h6,
 header.nav-open ul li { /* Para no poner font-family abajo */
     font-family: "Bebas Neue", "cursive";
     font-weight: normal;
-    letter-spacing: 3px;
+    letter-spacing: 1.5px;
 }
 
 h1 {
     font-size: 36px;
+    letter-spacing: 3px;
 }
 
 h2 {
@@ -31,6 +32,7 @@ h3 {
 
 h4 {
     font-size: 14px;
+    color: white;
 }
 
 /* TODO Fix button margin-top */
@@ -148,4 +150,34 @@ header.nav-open ul li {
 #summary h1 {
     margin-top: 24px;
     margin-bottom: 34px;
+}
+
+/* Skills */
+#skills {
+
+}
+
+#skills .list {
+    display: flex;
+    overflow: auto;
+}
+
+#skills .list .skill {
+    box-sizing: border-box;   /* Or use the snippet you know */
+    padding: 30px 35px;
+    width: 208px;
+    height: 350px;
+    border-radius: 3px;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.5);
+    margin-right: 32px;
+}
+
+#skills .list .skill h3 {
+    border: solid 1px white;
+}
+
+#skills .list .skill ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
