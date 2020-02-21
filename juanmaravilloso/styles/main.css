@@ -57,8 +57,8 @@ a.button {
 /* Layout */
 .wrapper {
     /* With margin white spaces would appear */
-    padding-left: 24px;     /* Update skills .list .skill:first-child */
-    padding-right: 24px;
+    padding-left: 8vw;     /* Update skills .list .skill:first-child */
+    padding-right: 8vw;
 }
 
 header,
@@ -93,6 +93,14 @@ header #icon-close {
     display: none;
 }
 
+header ul {
+    font-size: 18px;
+    letter-spacing: 2px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 header nav {
     display: none;
 }
@@ -124,14 +132,6 @@ header.nav-open #icon-close {
     z-index: 10;
 }
 
-header.nav-open ul {
-    font-size: 18px;
-    letter-spacing: 2px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
 header.nav-open ul li {
     color: #1c6698;
     margin: 40px;
@@ -153,7 +153,12 @@ header.nav-open ul li {
 }
 
 /* About me */
-.videoWrapper { /* URL hitten repo */
+#about-me .container {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.videoWrapper { /* URL in hitten repo */
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
     padding-top: 25px;
@@ -181,7 +186,7 @@ header.nav-open ul li {
 
 #skills .list::after {
     content: "";
-    padding-right: 24px;
+    padding-right: 8vw;
 }
 
 #skills .list .skill {
@@ -196,7 +201,7 @@ header.nav-open ul li {
 }
 
 #skills .list .skill:first-child {
-    margin-left: 24px;          /* update .wrapper */
+    margin-left: 8vw;          /* update .wrapper */
 }
 
 #skills .list .skill:last-child {
@@ -219,4 +224,59 @@ footer {
     justify-content: center;
     align-items: center;
     height: 104px;
+}
+
+/* TODO p in mayus */
+
+@media screen and (min-width: 533px) {
+    #skills .list {
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    /* layout */
+    section {
+        padding-top: 100px;
+        padding-bottom: 140px;
+    }
+
+    /* header */
+    header {
+        height: 104px;
+    }
+
+    header h2 {
+        font-size: 20px;
+    }
+
+    /* menu */
+    header #icon-open,
+    header #icon-close
+    header.nav-open #icon-open,
+    header.nav-open #icon-close {
+        display: none;
+    }
+
+    header nav {
+        display: block;
+    }
+
+    header nav ul li {
+        display: inline-block;
+        margin: 0 20px;
+    }
+    #summary p {
+        font-size: 20px;
+    }
+    
+    #summary h1 {
+        width: 491px;
+        font-size: 80px;
+        margin: 30px auto 60px auto;
+    }
+
+    #skills .list .skill {
+        margin-right: 128px;
+    }
 }
