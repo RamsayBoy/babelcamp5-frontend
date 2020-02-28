@@ -14,6 +14,7 @@ countInput.addEventListener('input', function() {
 countInput.addEventListener('keyup', function(e) {
     if (e.key == 'Enter') {
         countBtn.click();
+        this.select();
     }
 });
 
