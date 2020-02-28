@@ -2,7 +2,7 @@ const countBtn = document.querySelector('button');
 const countInput = document.querySelector('input');
 const countList = document.querySelector('button + ul');
 
-countInput.addEventListener('input', function () {
+countInput.addEventListener('keyup', function (e) {
     let inputValue = countInput.value;
 
     if (inputValue) {
@@ -10,9 +10,7 @@ countInput.addEventListener('input', function () {
     } else {
         countBtn.textContent = 'Contar';
     }
-});
-
-countInput.addEventListener('keyup', function (e) {
+    
     if (e.key == 'Enter') {
         countBtn.click();
         this.select();
