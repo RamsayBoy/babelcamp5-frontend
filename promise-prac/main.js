@@ -1,3 +1,4 @@
+// TODO Refactor
 const countBtn = document.querySelector('button');
 const countInput = document.querySelector('input');
 const countList = document.querySelector('button + ul');
@@ -21,12 +22,30 @@ countInput.addEventListener('keyup', function (e) {
 });
 
 countBtn.addEventListener('click', function () {
+    let seconds = 0;
     let inputValue = countInput.value;
 
     if (inputValue && inputValue > 0) {
         let li = document.createElement('li');
-        // TODO Add counter and remove 0 value
         li.textContent = `0/${inputValue}`;
+        let counter = setInterval(function () {
+            li.textContent = `${seconds}/${inputValue}`;
+            console.log(`${seconds}/${inputValue}`);
+            seconds++;
+        }, 1000);
+
+        let stopCounter = new Promise(function (resolve) {
+            // TODO See without function
+            setTimeout(function () {
+                resolve();
+            }, 1000 * inputValue);
+        });
+
+        stopCounter.then(function () {
+            clearInterval(counter);
+            li.remove();
+        });
+
         countList.appendChild(li);
 
         // Event for removing element from list
