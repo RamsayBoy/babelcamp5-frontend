@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera</title>
+    <canvas></canvas>
+    <style>
+        div {
+            width: 80%;
+        }
+
+        div canvas {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <video autoplay></video>
+    <button>Take a picture</button>
+    <div></div>
+
+    <script>
+        'use strict';
+
+        const video = document.querySelector('video');
+        const div = document.querySelector('div');
+        const captureButton = document.querySelector('button');
+
+        let constrains = window.constraints = {
+            audio: false,
+            video: true
+        };
+
+        navigator.mediaDevices.getUserMedia(constraints)
+            .then(function (stream) {
+                let videoTracks = stream.getVideoTracks();
+                window.stream = stream;
+                video.srcObject = stream;
+            });
+
+        captureButton.addEventListener('click', function () {
+            const picture = document.createElement('canvas');
+
+            picture.width = 320;
+            picture.height = 240;
+
+            let context = picture.getContext('2d');
+            context.drawImage(video, 0, 0, picture.width, picture.height);
+
+            div.appendChild(picture);
+        });
+    </script>
+</body>
+
+</html>
