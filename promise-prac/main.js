@@ -1,11 +1,9 @@
-// TODO Refactor
 const countBtn = document.querySelector('button');
 const countInput = document.querySelector('input');
 const countList = document.querySelector('button + ul');
 
-countInput.addEventListener('input', function () {
+countInput.addEventListener('input', () => {
     let inputValue = countInput.value;
-    console.log(inputValue > 0);
 
     if (inputValue && inputValue > 0) {
         countBtn.textContent = inputValue == 1 ? `Contar ${inputValue} segundo` : `Contar ${inputValue} segundos`;
@@ -21,27 +19,29 @@ countInput.addEventListener('keyup', function (e) {
     }
 });
 
-countBtn.addEventListener('click', function () {
+countBtn.addEventListener('click', () => {
     let seconds = 0;
-    let inputValue = countInput.value;
+    let quantity = countInput.value;
 
-    if (inputValue && inputValue > 0) {
+    if (quantity && quantity > 0) {
         let li = document.createElement('li');
-        li.textContent = `0/${inputValue}`;
+        li.textContent = `--/${quantity}`;
+
         let counter = setInterval(function () {
-            li.textContent = `${seconds}/${inputValue}`;
-            console.log(`${seconds}/${inputValue}`);
+            li.textContent = `${seconds}/${quantity}`;
+            console.log(`${seconds}/${quantity}`);
+
             seconds++;
         }, 1000);
 
-        let stopCounter = new Promise(function (resolve) {
+        let stopCounter = new Promise((resolve) => {
             // TODO See without function
             setTimeout(function () {
                 resolve();
-            }, 1000 * inputValue);
+            }, 1000 * quantity);
         });
 
-        stopCounter.then(function () {
+        stopCounter.then(() => {
             clearInterval(counter);
             li.remove();
         });
@@ -49,7 +49,7 @@ countBtn.addEventListener('click', function () {
         countList.appendChild(li);
 
         // Event for removing element from list
-        li.addEventListener('click', function () {
+        li.addEventListener('click', () => {
             li.remove();
         });
     }
