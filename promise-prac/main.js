@@ -2,7 +2,7 @@ const countBtn = document.querySelector('button');
 const countInput = document.querySelector('input');
 const countList = document.querySelector('button + ul');
 
-countInput.addEventListener('input', function (e) {
+countInput.addEventListener('input', function () {
     let inputValue = countInput.value;
     console.log(inputValue > 0);
 
