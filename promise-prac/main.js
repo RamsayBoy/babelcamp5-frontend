@@ -25,5 +25,10 @@ countBtn.addEventListener('click', function () {
         // TODO Add counter and remove 0 value
         li.textContent = `0/${inputValue}`;
         countList.appendChild(li);
+        
+        // Event for removing li element from list
+        li.addEventListener('click', function() {
+            li.remove();
+        });
     }
 });
