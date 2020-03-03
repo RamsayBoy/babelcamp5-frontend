@@ -18,9 +18,29 @@ body {
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 35px;
     color: darkgrey;
     text-align: center;
+}
+
+.button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 3px;
+    background: darkslategray;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2),
+                0 4px 5px 0 rgba(0, 0, 0, .14),
+                0 1px 10px 0 rgba(0, 0, 0, .12);
+}
+
+.button:disabled {
+    cursor: default;
+    background: darkgrey;
+    color: lightgrey;
+    box-shadow: none;
 }
 
 /* Main */
@@ -38,7 +58,14 @@ h1 {
 }
 
 main {
+    max-width: 400px;
+    padding-top: 2px;
+    border-radius: 2px;
     background: white;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2),
+                0 4px 5px 0 rgba(0, 0, 0, .14),
+                0 1px 10px 0 rgba(0, 0, 0, .12);
+    margin: 0 auto;
 }
 
 .task-list {
@@ -57,11 +84,38 @@ main {
 }
 
 .task-management {
+    padding: 5px 10px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
+    grid-template-columns: 1fr auto;
+    grid-gap: 5px;
+    overflow: hidden;
 }
 
 .task-management p {
     font-size: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    align-items: center;
+    grid-gap: 10px;
+}
+
+/* Footer */
+footer {
+    margin-top: 15px;
+}
+
+footer p {
+    font-size: 10px;
+    margin: 5px 0;
+    text-align: center;
+    color: darkgray;
+}
+
+footer a {
+    color: cadetblue;
+    text-decoration: none;
 }
