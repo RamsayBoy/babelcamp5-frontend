@@ -1,0 +1,27 @@
+/* Global */
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    background: lightgrey;
+    margin: 0;
+    padding: 5px;
+    color: darkslategray;
+    font-weight: lighter;
+}
+
+h1 {
+    font-size: 30px;
+    color: darkgrey;
+    text-align: center;
+}
+
+/* Main */
+#task-input {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    border: none;
+    padding: 15px 12px;
+}
