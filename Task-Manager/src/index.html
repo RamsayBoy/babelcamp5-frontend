@@ -15,8 +15,8 @@
         <p class="question">¿Estás seguro de que deseas eliminar esta tarea?</p>
         <!-- Task example -->
         <p>Task 1</p>
-        <a class="button" href="#">Sí</a>
-        <a class="button" href="#">No</a>
+        <button>Sí</button>
+        <button>No</button>
     </dialog>
 
     <h1>Administrador de tareas</h1>
@@ -29,12 +29,10 @@
         <!-- Tasks example -->
         <div class="task-wrapper">
             <label>
-                <input id="task-checkbox1" name="task" type="checkbox" maxlength="30">
+                <input id="task-checkbox" name="task" type="checkbox" maxlength="30">
                 Task 1
             </label>
-            <a href="#">
-                <i class="material-icons">delete_outline</i>
-            </a>
+            <i class="material-icons">delete_outline</i>
         </div>
 
         <hr>
@@ -42,14 +40,14 @@
         <div class="task-management">
             <p>Quedan 0 tareas</p>
 
-            <a href="">Todas</a>
-            <a href="">Pendientes</a>
-            <a href="">Completadas</a>
+            <button>Todas</button>
+            <button>Pendientes</button>
+            <button>Completadas</button>
         </div>
     </main>
 
     <footer>
-        <p>Autor Pablo Mira García</p>
+        <p>Autor: Pablo Mira García</p>
         <p>GitHub: <a href="https://github.com/ramsayboy/">https://github.com/ramsayboy/</a></p>
     </footer>
 </body>
