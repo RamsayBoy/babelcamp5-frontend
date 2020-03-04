@@ -129,6 +129,10 @@ main {
     margin: 10px 0;
 }
 
+.task-list i {
+    cursor: pointer;
+}
+
 .task-management {
     padding: 5px 10px;
     display: grid;
