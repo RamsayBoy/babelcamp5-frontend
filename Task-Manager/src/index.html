@@ -15,16 +15,22 @@
     <!-- Styles -->
     <!-- TODO Ask if it is the best practice -->
     <link href="../src/css/styles.css" rel="stylesheet">
+
+    <!-- Scripts -->
+    <script src="main.js" type="application/javascript" defer></script>
 </head>
 
 <body>
-    <dialog id="confirm-dialog">
-        <p class="question">¿Estás seguro de que deseas eliminar esta tarea?</p>
-        <!-- Task example -->
-        <p>Task 1</p>
-        <button class="button">Sí</button>
-        <button class="button">No</button>
-    </dialog>
+    <div class="modal-container">
+        <div class="modal">
+            <h2>¿Estás seguro de que deseas eliminar esta tarea?</h2>
+            <p>Una tarea para eliminar</p>
+            <div>
+                <button class="button large">Sí</button>
+                <button class="button large">No</button>
+            </div>
+        </div>
+    </div>
 
     <header>
         <h1>Administrador de tareas</h1>
