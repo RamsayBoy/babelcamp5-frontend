@@ -2,11 +2,9 @@ const textbox = <HTMLInputElement>document.querySelector('#task-input');
 const taskList = <HTMLUListElement>document.querySelector('.task-list');
 
 textbox.addEventListener('keyup', function (e) {
-    if (e.key === 'Enter') {
+    if (e.key === 'Enter' && this.value !== '') {
         // Create task and insert it
-        let task = document.createElement('li');
-        task = createTask(this.value);
-
+        let task = createTask(this.value);
         taskList.appendChild(task);
 
         // Clean input content
@@ -26,6 +24,10 @@ function createTask(inputValue: string) {
     checkbox.setAttribute('id', 'task-checkbox');
     checkbox.setAttribute('name', 'task');
     checkbox.setAttribute('maxlength', '30');
+
+    checkbox.addEventListener('change', function () {
+        console.log('hasdhlsadk');
+    });
 
     // Init label
     label.textContent = inputValue;
