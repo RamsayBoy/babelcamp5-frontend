@@ -129,6 +129,10 @@ main {
     margin: 10px 0;
 }
 
+.task-list #task-checkbox:checked + label {
+    text-decoration: line-through;
+}
+
 .task-list i {
     cursor: pointer;
 }

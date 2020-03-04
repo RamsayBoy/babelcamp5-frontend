@@ -4,22 +4,21 @@ const taskList = <HTMLUListElement>document.querySelector('.task-list');
 textbox.addEventListener('keyup', function (e) {
     if (e.key === 'Enter') {
         // Create task and insert it
-        let task = createTask(this.value);
-        taskList.innerHTML += task;
+        let task = document.createElement('li');
+        task.innerHTML = createTask(this.value);
+
+        taskList.appendChild(task);
 
         // Clean input content
         this.value = '';
     }
 });
 
-/* Create a task by passing an string */
 function createTask(inputValue: string) {
-    return `<li>
-                <label>
-                    <input id="task-checkbox" name="task" type="checkbox" maxlength="30">
-                    ${inputValue}
-                </label>
+    return `<div>
+                <input id="task-checkbox" name="task" type="checkbox" maxlength="30">
+                <label>${inputValue}</label>
+            </div>
 
-                <i class="material-icons">delete_outline</i>
-            </li>`;
+            <i class="material-icons">delete_outline</i>`;
 }
