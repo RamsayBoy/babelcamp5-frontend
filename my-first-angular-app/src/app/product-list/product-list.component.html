@@ -1,0 +1,21 @@
+<div class="wrapper">
+  <h1>Products</h1>
+
+  <i class="material-icons">
+    view_list
+  </i>
+  <i class="material-icons">
+    view_module
+  </i>
+
+  <ul class="products">
+    <li *ngFor="let product of products" class="product">
+      <img src="{{product.image}}" alt="The imgae product is: {{product.name}}">
+      <div>
+        <h2>{{product.name}}</h2>
+        <p>{{product.description}}</p>
+        <div class="price">{{product.price}} €</div>
+      </div>
+    </li> <!-- .product -->
+  </ul> <!-- .products -->
+</div> <!-- .wrapper -->
