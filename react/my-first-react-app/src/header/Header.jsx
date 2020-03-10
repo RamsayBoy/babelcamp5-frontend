@@ -3,8 +3,17 @@ import './Header.css';
 
 function Header() {
     return (
-        <header>
-            <h1>ecommerce</h1>
+        <header class="wrapper">
+            <i class="material-icons">
+                menu
+            </i>
+            {/* TODO Add nav */}
+            <div>
+                Bootcamp Ecommerce
+            </div>
+            <i class="material-icons">
+                shopping_cart
+            </i>
         </header>
     );
 }
