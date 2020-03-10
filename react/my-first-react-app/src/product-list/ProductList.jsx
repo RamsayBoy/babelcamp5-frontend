@@ -28,14 +28,14 @@ class ProductList extends React.Component {
             <div className="wrapper">
                 <h1>Products</h1>
                 <div className="views">
-                    <i onClick={() => this.setState( { gridView: false } )} className="material-icons">
+                    <i onClick={() => this.setState({ gridView: false })} className="material-icons">
                         view_list
                    </i>
-                    <i onClick={() => this.setState( { gridView: true } )} className="material-icons">
+                    <i onClick={() => this.setState({ gridView: true })} className="material-icons">
                         view_module
                   </i>
                 </div>
-                <ul className={ this.state.gridView ? 'grid' : '' }>
+                <ul className={this.state.gridView ? 'grid' : ''}>
                     {productList}
                 </ul>
             </div>
