@@ -1,5 +1,5 @@
 import React from 'react';
-import './ProductList.css'
+import './ProductList.css';
 
 class ProductList extends React.Component {
     constructor(props) {
@@ -26,7 +26,6 @@ class ProductList extends React.Component {
 
         return (
             <div className="wrapper">
-                <h1>Products</h1>
                 <div className="views">
                     <i onClick={() => this.setState({ gridView: false })} className="material-icons">
                         view_list
