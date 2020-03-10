@@ -3,15 +3,15 @@ import './Header.css';
 
 function Header() {
     return (
-        <header class="wrapper">
-            <i class="material-icons">
+        <header className="wrapper">
+            <i className="material-icons">
                 menu
             </i>
             {/* TODO Add nav */}
             <div>
                 Bootcamp Ecommerce
             </div>
-            <i class="material-icons">
+            <i className="material-icons">
                 shopping_cart
             </i>
         </header>
