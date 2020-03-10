@@ -13,8 +13,15 @@
       <img src="{{product.image}}" alt="The imgae product is: {{product.name}}">
       <div>
         <h2>{{product.name}}</h2>
-        <p>{{product.description}}</p>
+        <p>
+          ({{product.createdAt | date:'dd/MM/yy'}}) -
+          {{product.description.length > 150 ? (product.description | slice:0: 150) + '...' : product.description}}
+        </p>
         <div class="price">{{product.price}} €</div>
+        <div>
+          <button class="button" #buttonElement
+            (click)="buttonClick.emit({product: product, element: buttonElement})">{{buttonText}}</button>
+        </div>
       </div>
     </li> <!-- .product -->
   </ul> <!-- .products -->
