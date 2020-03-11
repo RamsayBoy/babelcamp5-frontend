@@ -4,6 +4,11 @@
   </label>
   <ul id="taskList">
     <!--  it fills with javascript listTasksElements function  -->
+    <li *ngFor="let task of tasks">
+      <p>{{task.id}}</p>
+      <p>{{task.description}}</p>
+      <p>{{task.done}}</p>
+    </li>
   </ul>
   <div class="info">
     <p id="tasksLeft">Quedan 6 tareas</p>
