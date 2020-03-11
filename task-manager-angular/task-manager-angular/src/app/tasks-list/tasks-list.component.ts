@@ -3,11 +3,11 @@ import { Task } from '../task';
 import { TaskService } from '../task.service';
 
 @Component({
-  selector: 'app-task-manager',
-  templateUrl: './task-list.component.html',
-  styleUrls: ['./task-list.component.css']
+  selector: 'app-tasks-list',
+  templateUrl: './tasks-list.component.html',
+  styleUrls: ['./tasks-list.component.css']
 })
-export class TaskListComponent implements OnInit {
+export class TasksListComponent implements OnInit {
 
   @Input() tasks: Task[];
 
